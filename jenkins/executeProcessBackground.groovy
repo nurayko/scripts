@@ -1,4 +1,4 @@
-File log = new File("process.log");
+File log = new File("process1.log");
 File dir = new File("/tmp")
 
 List<String> cmds = [
