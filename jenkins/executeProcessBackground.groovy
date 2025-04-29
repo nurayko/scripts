@@ -1,5 +1,4 @@
-File log = new File("process1.log");
-File dir = new File("/tmp")
+File log = new File("/tmp/process1.log");
 
 List<String> cmds = [
         "command",
@@ -10,5 +9,4 @@ ProcessBuilder pb =
         new ProcessBuilder(cmds)
 pb.redirectErrorStream(true)
 pb.redirectOutput(ProcessBuilder.Redirect.appendTo(log))
-pb.directory(dir)
 Process p = pb.start()
